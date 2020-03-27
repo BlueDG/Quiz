@@ -1,5 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export default function Answer(props) {
-  return <button>{props.answer}</button>;
+export default function Answer({ answer }) {
+  console.log('données reçues de answer: ', answer);
+  return <button>{answer.id}</button>;
 }

@@ -15,7 +15,7 @@ export default function Quizz() {
       <h1>Quiz page</h1>
       <Progress total="3" current="1" />
       <Question question={randomQuestion} />
-      <Answers />
+      <Answers question={randomQuestion} />
       <Button>Next</Button>
     </div>
   );
