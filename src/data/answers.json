@@ -1,0 +1,65 @@
+[{
+	"animals": [{
+			"id": "shrimp",
+			"label": "Shrimp"
+		},
+		{
+			"id": "snail",
+			"label": "Snail"
+		},
+		{
+			"id": "elephant",
+			"label": "Elephant"
+		},
+		{
+			"id": "kangaroo",
+			"label": "Kangaroo"
+		},
+		{
+			"id": "ostrich",
+			"label": "Ostrich"
+		},
+		{
+			"id": "fox",
+			"label": "Fox"
+		}
+	],
+	"cities": [{
+			"id": "berlin",
+			"label": "Berlin"
+		},
+		{
+			"id": "paris",
+			"label": "Paris"
+		},
+		{
+			"id": "bologna",
+			"label": "Bologna"
+		},
+		{
+			"id": "strasbourg",
+			"label": "Strasbourg"
+		}
+	],
+	"pirates": [{
+			"id": "blackbeard",
+			"label": "Blackbeard"
+		},
+		{
+			"id": "charlesvane",
+			"label": "Charles Vane"
+		},
+		{
+			"id": "jacksparrow",
+			"label": "Jack Sparrow"
+		},
+		{
+			"id": "benjaminhornigold",
+			"label": "Benjamin Hornigold"
+		},
+		{
+			"id": "henrymorgan",
+			"label": "Henry Morgan"
+		}
+	]
+}]
