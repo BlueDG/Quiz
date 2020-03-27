@@ -12,7 +12,7 @@ export default function Quizz() {
 
   return (
     <div>
-      <h1>Quizz page</h1>
+      <h1>Quiz page</h1>
       <Progress total="3" current="1" />
       <Question question={randomQuestion} />
       <Answers />

@@ -1,24 +1,24 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Button from '../components/Button';
 
 export default function Home() {
   const [difficulty, setDifficulty] = useState();
   const difficulties = [
     {
       id: 1,
-      label: "Easy",
+      label: 'Easy',
       questions: 3
     },
     {
       id: 2,
-      label: "Normal",
+      label: 'Normal',
       questions: 4
     },
     {
       id: 3,
-      label: "Hard",
+      label: 'Hard',
       questions: 5
     }
   ];
@@ -40,7 +40,7 @@ export default function Home() {
           </List>
         );
       })}
-      <Link to={`/quizz${difficulty}`}>
+      <Link to={`/quiz${difficulty}`}>
         <Button type="submit" disabled={!difficulty}>
           Start
         </Button>
