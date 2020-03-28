@@ -1,9 +1,9 @@
 {
-  "cities": [
-    {
+  "cities": [{
       "id": "1",
       "question": "What is the capital of Germany?",
-      "answer": "Berlin"
+      "answer": "Berlin",
+      "difficulty": 1
     },
     {
       "id": "2",
@@ -26,8 +26,7 @@
       "answer": "Strasbourg"
     }
   ],
-  "pirates": [
-    {
+  "pirates": [{
       "id": "6",
       "question": "To which pirate belonged the two hundred ton, forty-gun frigate named the Queen Anne's Revenge.",
       "answer": "Blackbeard"
@@ -58,8 +57,7 @@
       "answer": "Henry Morgan"
     }
   ],
-  "animals": [
-    {
+  "animals": [{
       "id": "12",
       "question": "Which animal carries its heart in its head?",
       "answer": "Shrimp"
