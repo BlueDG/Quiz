@@ -1,0 +1,83 @@
+{
+  "cities": [
+    {
+      "id": "1",
+      "question": "What is the capital of Germany?",
+      "answer": "Berlin"
+    },
+    {
+      "id": "2",
+      "question": "What is the capital of France?",
+      "answer": "Paris"
+    },
+    {
+      "id": "3",
+      "question": "Which city has the oldest still operating university in the world?",
+      "answer": "Bologna"
+    },
+    {
+      "id": "4",
+      "question": "Which city is called The Silicon Valley Of Europe ?",
+      "answer": "Berlin"
+    },
+    {
+      "id": "5",
+      "question": "In which city is the European Court of Human Rights located?",
+      "answer": "Strasbourg"
+    }
+  ],
+  "pirates": [
+    {
+      "id": "6",
+      "question": "To which pirate belonged the two hundred ton, forty-gun frigate named the Queen Anne's Revenge.",
+      "answer": "Blackbeard"
+    },
+    {
+      "id": "7",
+      "question": "Which pirate liked to use fire and smoke effects in combat to scare his enemies?",
+      "answer": "blackbeard"
+    },
+    {
+      "id": "8",
+      "question": "Who was the only pirate captain to resist when Woodes Rogers asserted governorship over Nassau in 1718?",
+      "answer": "Charlesvane"
+    },
+    {
+      "id": "9",
+      "question": "Which pirate did not actually exist?",
+      "answer": "Jacksparrow"
+    },
+    {
+      "id": "10",
+      "question": "Which former pirate became a pirate hunter himself?",
+      "answer": "Benjamin hornigold"
+    },
+    {
+      "id": "11",
+      "question": "Which pirate is the inspiration for a commonly known brand of rum?",
+      "answer": "Henry Morgan"
+    }
+  ],
+  "animals": [
+    {
+      "id": "12",
+      "question": "Which animal carries its heart in its head?",
+      "answer": "Shrimp"
+    },
+    {
+      "id": "13",
+      "question": "Which animal sleeps up to three years at a stretch?",
+      "answer": "Snail"
+    },
+    {
+      "id": "14",
+      "question": "Which is the only animal that cant jump?",
+      "answer": "Elephant"
+    },
+    {
+      "id": "15",
+      "question": "Which mammal is not able to fart?",
+      "answer": "Kangaroo"
+    }
+  ]
+}

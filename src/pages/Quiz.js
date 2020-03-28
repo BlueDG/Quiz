@@ -1,22 +1,26 @@
-import React from 'react';
-import Progress from '../components/Progress';
-import Question from '../components/Question';
-import Answers from '../components/Answers';
-import Button from '../components/Button';
-import Data from '../data/data.json';
+import React, { useMemo, useState } from "react";
+import { useParams } from "react-router-dom";
+import Progress from "../components/Progress";
+import Question from "../components/Question";
+import Button from "../components/Button";
+import questions from "../assets/data/questions.json";
+import { shuffle } from "../utils/quizz";
 
-export default function Quizz() {
-  const dataKeys = Object.keys(Data);
-  const randomIndex = Math.floor(Math.random() * dataKeys.length);
-  const randomQuestion = Data[dataKeys[randomIndex]];
-
+export default function Quiz() {
+  const [cardNumber, setCardNumber] = useState(0);
+  let { id } = useParams();
+  const deck = useMemo(() => shuffle(questions[id]), [id]);
   return (
     <div>
-      <h1>Quiz page</h1>
-      <Progress total="3" current="1" />
-      <Question question={randomQuestion} />
-      <Answers question={randomQuestion} />
-      <Button>Next</Button>
+      <h1>{id.toUpperCase()}</h1>
+      <Progress total="3" current={cardNumber + 1} />
+      <Question question={deck[cardNumber].question} />
+      <Button
+        isDisabled={cardNumber >= deck.length}
+        onClick={() => setCardNumber(cardNumber + 1)}
+      >
+        Next
+      </Button>
     </div>
   );
 }
