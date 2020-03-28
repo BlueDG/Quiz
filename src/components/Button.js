@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Button({ children, disabled }) {
-  return <Btn disabled={disabled}>{children}</Btn>;
-}
-
 const Btn = styled.button`
   text-transform: none;
   outline: none;
@@ -12,3 +8,11 @@ const Btn = styled.button`
     outline: none;
   }
 `;
+
+export default function Button({ children, isDisabled, onClick }) {
+  return (
+    <Btn disabled={isDisabled} onClick={onClick}>
+      {children}
+    </Btn>
+  );
+}
