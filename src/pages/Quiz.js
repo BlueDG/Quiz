@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from "react";
-import { useParams } from "react-router-dom";
-import Progress from "../components/Progress";
-import Question from "../components/Question";
-import Button from "../components/Button";
-import questions from "../assets/data/questions.json";
-import { shuffle } from "../utils/quizz";
+import React, { useMemo, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import Progress from '../components/Progress';
+import Question from '../components/Question';
+import Button from '../components/Button';
+import questions from '../assets/data/questions.json';
+import { shuffle } from '../utils/quiz';
 
 export default function Quiz() {
   const [cardNumber, setCardNumber] = useState(0);

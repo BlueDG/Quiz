@@ -1,83 +1,95 @@
 {
-  "cities": [
-    {
+  "cities": [{
       "id": "1",
       "question": "What is the capital of Germany?",
-      "answer": "Berlin"
+      "answer": "Berlin",
+      "difficulty": 1
     },
     {
       "id": "2",
       "question": "What is the capital of France?",
-      "answer": "Paris"
+      "answer": "Paris",
+      "difficulty": 1
     },
     {
       "id": "3",
       "question": "Which city has the oldest still operating university in the world?",
-      "answer": "Bologna"
+      "answer": "Bologna",
+      "difficulty": 3
     },
     {
       "id": "4",
       "question": "Which city is called The Silicon Valley Of Europe ?",
-      "answer": "Berlin"
+      "answer": "Berlin",
+      "difficulty": 3
     },
     {
       "id": "5",
       "question": "In which city is the European Court of Human Rights located?",
-      "answer": "Strasbourg"
+      "answer": "Strasbourg",
+      "difficulty": 2
     }
   ],
-  "pirates": [
-    {
+  "pirates": [{
       "id": "6",
       "question": "To which pirate belonged the two hundred ton, forty-gun frigate named the Queen Anne's Revenge.",
-      "answer": "Blackbeard"
+      "answer": "Blackbeard",
+      "difficulty": 2
     },
     {
       "id": "7",
       "question": "Which pirate liked to use fire and smoke effects in combat to scare his enemies?",
-      "answer": "blackbeard"
+      "answer": "blackbeard",
+      "difficulty": 2
     },
     {
       "id": "8",
       "question": "Who was the only pirate captain to resist when Woodes Rogers asserted governorship over Nassau in 1718?",
-      "answer": "Charlesvane"
+      "answer": "Charlesvane",
+      "difficulty": 3
     },
     {
       "id": "9",
       "question": "Which pirate did not actually exist?",
-      "answer": "Jacksparrow"
+      "answer": "Jacksparrow",
+      "difficulty": 1
     },
     {
       "id": "10",
       "question": "Which former pirate became a pirate hunter himself?",
-      "answer": "Benjamin hornigold"
+      "answer": "Benjamin hornigold",
+      "difficulty": 3
     },
     {
       "id": "11",
       "question": "Which pirate is the inspiration for a commonly known brand of rum?",
-      "answer": "Henry Morgan"
+      "answer": "Henry Morgan",
+      "difficulty": 1
     }
   ],
-  "animals": [
-    {
+  "animals": [{
       "id": "12",
       "question": "Which animal carries its heart in its head?",
-      "answer": "Shrimp"
+      "answer": "Shrimp",
+      "difficulty": 3
     },
     {
       "id": "13",
       "question": "Which animal sleeps up to three years at a stretch?",
-      "answer": "Snail"
+      "answer": "Snail",
+      "difficulty": 3
     },
     {
       "id": "14",
       "question": "Which is the only animal that cant jump?",
-      "answer": "Elephant"
+      "answer": "Elephant",
+      "difficulty": 1
     },
     {
       "id": "15",
       "question": "Which mammal is not able to fart?",
-      "answer": "Kangaroo"
+      "answer": "Kangaroo",
+      "difficulty": 2
     }
   ]
 }
