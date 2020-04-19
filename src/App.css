@@ -1,0 +1,215 @@
+@font-face {
+    font-family: sevastopol;
+    src: url('./assets/fonts/sevastopol.ttf');
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "sevastopol";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: #db0e15;
+    text-shadow: 0px 0px 5px rgba(219, 14, 21, .8);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+/* FLICKERING EFFECT HOME PAGE */
+@-webkit-keyframes flicker {
+    0% {
+        opacity: .86139
+    }
+
+    5% {
+        opacity: .12793
+    }
+
+    10% {
+        opacity: .36759
+    }
+
+    15% {
+        opacity: .9766
+    }
+
+    20% {
+        opacity: .61364
+    }
+
+    25% {
+        opacity: .94477
+    }
+
+    30% {
+        opacity: .57811
+    }
+
+    35% {
+        opacity: .03416
+    }
+
+    40% {
+        opacity: .21835
+    }
+
+    45% {
+        opacity: .62054
+    }
+
+    50% {
+        opacity: .89452
+    }
+
+    55% {
+        opacity: .89997
+    }
+
+    60% {
+        opacity: .37872
+    }
+
+    65% {
+        opacity: .04929
+    }
+
+    70% {
+        opacity: .14477
+    }
+
+    75% {
+        opacity: .27512
+    }
+
+    80% {
+        opacity: .84701
+    }
+
+    85% {
+        opacity: .85952
+    }
+
+    90% {
+        opacity: .76553
+    }
+
+    95% {
+        opacity: .91372
+    }
+
+    100% {
+        opacity: .05536
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: .86139
+    }
+
+    5% {
+        opacity: .12793
+    }
+
+    10% {
+        opacity: .36759
+    }
+
+    15% {
+        opacity: .9766
+    }
+
+    20% {
+        opacity: .61364
+    }
+
+    25% {
+        opacity: .94477
+    }
+
+    30% {
+        opacity: .57811
+    }
+
+    35% {
+        opacity: .03416
+    }
+
+    40% {
+        opacity: .21835
+    }
+
+    45% {
+        opacity: .62054
+    }
+
+    50% {
+        opacity: .89452
+    }
+
+    55% {
+        opacity: .89997
+    }
+
+    60% {
+        opacity: .37872
+    }
+
+    65% {
+        opacity: .04929
+    }
+
+    70% {
+        opacity: .14477
+    }
+
+    75% {
+        opacity: .27512
+    }
+
+    80% {
+        opacity: .84701
+    }
+
+    85% {
+        opacity: .85952
+    }
+
+    90% {
+        opacity: .76553
+    }
+
+    95% {
+        opacity: .91372
+    }
+
+    100% {
+        opacity: .05536
+    }
+}
+
+@-webkit-keyframes steady {
+    from {
+        background: rgba(255, 230, 230, .1)
+    }
+
+    to {
+        background: rgba(49, 45, 45, .1)
+    }
+}
+
+@keyframes steady {
+    from {
+        background: rgba(255, 230, 230, .1)
+    }
+
+    to {
+        background: rgba(49, 45, 45, .1)
+    }
+}
