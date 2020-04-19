@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Btn = styled.button`
-  text-transform: none;
-  outline: none;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  line-height: normal;
   &:focus {
-    outline: none;
+    outline: 0;
   }
 `;
 

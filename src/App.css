@@ -1,0 +1,22 @@
+@font-face {
+    font-family: sevastopol;
+    src: url('./assets/fonts/sevastopol.ttf');
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "sevastopol";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 35px;
+    color: #db0e15;
+    text-shadow: 0px 0px 5px rgba(219, 14, 21, .8);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
