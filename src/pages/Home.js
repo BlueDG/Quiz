@@ -2,6 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 
+const ScreenBox = styled.div`
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    pointer-events: none;
+    background: rgba(49, 45, 45, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-animation: flicker 0.15s infinite, steady 4s;
+    animation: flicker 0.15s infinite, steady 4s;
+  }
+`;
+
 const ScreenText = styled.div`
   display: flex;
   flex-direction: column;
@@ -32,7 +53,7 @@ const Title = styled.h1`
     display: inline-block;
     background: url(https://image.ibb.co/gpxZLJ/top_outer.png);
     width: 140px;
-    height: 10px;
+    height: 8px;
     margin: auto 20px;
   }
 `;
@@ -97,17 +118,22 @@ const Button = styled.button`
 export default function Home() {
   const history = useHistory();
   return (
-    <ScreenText>
-      <Title>Welcome</Title>
-      <ContainerForm>
-        <Form action="">
-          <h2>Enter your name</h2>
-          <Input type="text" maxLength="13" required />
-          <Button type="submit" onClick={() => history.push(`/quiz/category`)}>
-            [ Start ]
-          </Button>
-        </Form>
-      </ContainerForm>
-    </ScreenText>
+    <ScreenBox>
+      <ScreenText>
+        <Title>Welcome</Title>
+        <ContainerForm>
+          <Form action="">
+            <h2>Enter your name</h2>
+            <Input type="text" maxLength="13" required />
+            <Button
+              type="submit"
+              onClick={() => history.push(`/quiz/category`)}
+            >
+              [ Start ]
+            </Button>
+          </Form>
+        </ContainerForm>
+      </ScreenText>
+    </ScreenBox>
   );
 }
