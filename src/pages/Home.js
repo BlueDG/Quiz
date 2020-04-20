@@ -6,9 +6,11 @@ const ScreenBody = styled.div`
   background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
   position: relative;
   overflow: hidden;
+  pointer-events: none;
   &::after {
     content: ' ';
     display: block;
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -110,12 +112,14 @@ const Input = styled.input`
   background: 0 0;
   line-height: normal;
   margin-bottom: 2%;
+  pointer-events: auto;
 `;
 
 const Button = styled.button`
   border: none;
   overflow: visible;
   outline: 0;
+  pointer-events: auto;
   cursor: pointer;
   background: 0 0;
   line-height: normal;
