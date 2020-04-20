@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 
-const ScreenBox = styled.div`
+const ScreenBody = styled.div`
+  background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
   position: relative;
   overflow: hidden;
   &::after {
@@ -21,6 +22,9 @@ const ScreenBox = styled.div`
     -webkit-animation: flicker 0.15s infinite, steady 4s;
     animation: flicker 0.15s infinite, steady 4s;
   }
+`;
+
+const ScreenOn = styled.div`
   -webkit-animation: turn-on 2s linear;
   animation: turn-on 2s linear;
   -webkit-animation-fill-mode: forwards;
@@ -35,7 +39,6 @@ const ScreenText = styled.div`
   text-align: center;
   padding-bottom: 5%;
   min-height: 100vh;
-  background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
   &::after {
     content: '';
     display: block;
@@ -126,25 +129,27 @@ const Button = styled.button`
 export default function Home() {
   const history = useHistory();
   return (
-    <ScreenBox>
-      <ScreenText>
-        <Title> sevastolink v.1</Title>
-        <ContainerForm>
-          <Form action="">
-            <ContainerH2>
-              <h2>Welcome</h2>
-              <h2>Please enter your name</h2>
-            </ContainerH2>
-            <Input type="text" maxLength="13" required />
-            <Button
-              type="submit"
-              onClick={() => history.push(`/quiz/category`)}
-            >
-              [ Start ]
-            </Button>
-          </Form>
-        </ContainerForm>
-      </ScreenText>
-    </ScreenBox>
+    <ScreenBody>
+      <ScreenOn>
+        <ScreenText>
+          <Title> sevastolink v.1</Title>
+          <ContainerForm>
+            <Form action="">
+              <ContainerH2>
+                <h2>Welcome</h2>
+                <h2>Please enter your name</h2>
+              </ContainerH2>
+              <Input type="text" maxLength="13" autofocus="true" required />
+              <Button
+                type="submit"
+                onClick={() => history.push(`/quiz/category`)}
+              >
+                [ Start ]
+              </Button>
+            </Form>
+          </ContainerForm>
+        </ScreenText>
+      </ScreenOn>
+    </ScreenBody>
   );
 }
