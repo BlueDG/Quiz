@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 
-const ScreenBox = styled.div`
+const ScreenBody = styled.div`
+  background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
   position: relative;
   overflow: hidden;
+  pointer-events: none;
   &::after {
     content: ' ';
     display: block;
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,15 +26,21 @@ const ScreenBox = styled.div`
   }
 `;
 
+const ScreenOn = styled.div`
+  -webkit-animation: turn-on 2s linear;
+  animation: turn-on 2s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+`;
+
 const ScreenText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   min-height: 100vh;
-  background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
   &::after {
     content: '';
     display: block;
@@ -91,6 +100,8 @@ const Form = styled.form`
   }
 `;
 
+const ContainerH2 = styled.div``;
+
 const Input = styled.input`
   padding: 1%;
   border: 2px solid #d7001e;
@@ -100,17 +111,21 @@ const Input = styled.input`
   outline: 0;
   background: 0 0;
   line-height: normal;
+  margin-bottom: 2%;
+  pointer-events: auto;
 `;
 
 const Button = styled.button`
   border: none;
   overflow: visible;
   outline: 0;
+  pointer-events: auto;
   cursor: pointer;
   background: 0 0;
   line-height: normal;
   background: rgba(219, 14, 21, 0.2);
   padding: 1% 2%;
+  margin-bottom: 3%;
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
 `;
@@ -118,22 +133,27 @@ const Button = styled.button`
 export default function Home() {
   const history = useHistory();
   return (
-    <ScreenBox>
-      <ScreenText>
-        <Title>Welcome</Title>
-        <ContainerForm>
-          <Form action="">
-            <h2>Enter your name</h2>
-            <Input type="text" maxLength="13" required />
-            <Button
-              type="submit"
-              onClick={() => history.push(`/quiz/category`)}
-            >
-              [ Start ]
-            </Button>
-          </Form>
-        </ContainerForm>
-      </ScreenText>
-    </ScreenBox>
+    <ScreenBody>
+      <ScreenOn>
+        <ScreenText>
+          <Title> sevastolink v.1</Title>
+          <ContainerForm>
+            <Form action="">
+              <ContainerH2>
+                <h2>Welcome</h2>
+                <h2>Please enter your name</h2>
+              </ContainerH2>
+              <Input type="text" maxLength="13" autofocus="true" required />
+              <Button
+                type="submit"
+                onClick={() => history.push(`/quiz/category`)}
+              >
+                [ Start ]
+              </Button>
+            </Form>
+          </ContainerForm>
+        </ScreenText>
+      </ScreenOn>
+    </ScreenBody>
   );
 }
