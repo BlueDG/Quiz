@@ -50,6 +50,8 @@ const ScreenText = styled.div`
     max-width: 500px;
     height: 28px;
   }
+  -webkit-filter: hue-rotate(120deg) brightness(2.7);
+  filter: hue-rotate(120deg) brightness(2.7);
 `;
 
 const Title = styled.h1`
