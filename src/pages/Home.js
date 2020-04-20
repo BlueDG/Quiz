@@ -145,7 +145,7 @@ export default function Home() {
                 <h2>Welcome</h2>
                 <h2>Please enter your name</h2>
               </ContainerH2>
-              <Input type="text" maxLength="13" autofocus="true" required />
+              <Input type="text" maxLength="13" autoFocus required />
               <Button
                 type="submit"
                 onClick={() => history.push(`/quiz/category`)}
