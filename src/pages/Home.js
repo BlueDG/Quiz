@@ -21,6 +21,10 @@ const ScreenBox = styled.div`
     -webkit-animation: flicker 0.15s infinite, steady 4s;
     animation: flicker 0.15s infinite, steady 4s;
   }
+  -webkit-animation: turn-on 2s linear;
+  animation: turn-on 2s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 `;
 
 const ScreenText = styled.div`
@@ -29,7 +33,7 @@ const ScreenText = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   min-height: 100vh;
   background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
   &::after {
@@ -91,6 +95,8 @@ const Form = styled.form`
   }
 `;
 
+const ContainerH2 = styled.div``;
+
 const Input = styled.input`
   padding: 1%;
   border: 2px solid #d7001e;
@@ -100,6 +106,7 @@ const Input = styled.input`
   outline: 0;
   background: 0 0;
   line-height: normal;
+  margin-bottom: 2%;
 `;
 
 const Button = styled.button`
@@ -111,6 +118,7 @@ const Button = styled.button`
   line-height: normal;
   background: rgba(219, 14, 21, 0.2);
   padding: 1% 2%;
+  margin-bottom: 3%;
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
 `;
@@ -120,10 +128,13 @@ export default function Home() {
   return (
     <ScreenBox>
       <ScreenText>
-        <Title>Welcome</Title>
+        <Title> sevastolink v.1</Title>
         <ContainerForm>
           <Form action="">
-            <h2>Enter your name</h2>
+            <ContainerH2>
+              <h2>Welcome</h2>
+              <h2>Please enter your name</h2>
+            </ContainerH2>
             <Input type="text" maxLength="13" required />
             <Button
               type="submit"
