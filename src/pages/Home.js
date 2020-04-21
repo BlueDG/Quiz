@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 
@@ -121,11 +121,13 @@ const Button = styled.button`
   border: none;
   overflow: visible;
   outline: 0;
-  pointer-events: auto;
+  pointer-events: ${(p) => (p.disabled ? 'none' : 'auto')};
   cursor: pointer;
   background: 0 0;
   line-height: normal;
-  background: rgba(219, 14, 21, 0.2);
+  background: ${(p) =>
+    p.disabled ? 'rgba(138, 219, 0, 0.1)' : 'rgba(219, 14, 21, 0.2)'};
+  color: ${(p) => (p.disabled ? 'rgba(138, 219, 0, 0.1)' : 'inherit')};
   padding: 1% 2%;
   margin-bottom: 3%;
   -webkit-font-smoothing: inherit;
@@ -134,20 +136,32 @@ const Button = styled.button`
 
 export default function Home() {
   const history = useHistory();
+  const [name, setName] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <ScreenBody>
       <ScreenOn>
         <ScreenText>
           <Title> sevastolink v.1</Title>
           <ContainerForm>
-            <Form action="">
+            <Form onSubmit={(e) => handleSubmit(e, name)}>
               <ContainerH2>
                 <h2>Welcome</h2>
                 <h2>Please enter your name</h2>
               </ContainerH2>
-              <Input type="text" maxLength="13" autoFocus required />
+              <Input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                maxLength="13"
+                autoFocus
+                required
+              />
               <Button
                 type="submit"
+                disabled={!name}
                 onClick={() => history.push(`/quiz/category`)}
               >
                 [ Start ]
